@@ -12,30 +12,34 @@ namespace josafafilho\urlparser\UrlComponents;
  * Class Path
  * @package josafafilho\urlparser\UrlComponents
  */
-class Path implements PathInterface {
+class Path implements PathInterface
+{
 
-	/**
-	 * @var string
-	 */
-	private $path;
+    /**
+     * @var string
+     */
+    private $path;
 
-	/**
-	 * Path constructor.
-	 *
-	 * @param string $path
-	 */
-	public function __construct( $path ) {
-		$this->path = $path;
-	}
+    /**
+     * Path constructor.
+     *
+     * @param string $path
+     */
+    public function __construct($path)
+    {
+        $this->path = $path;
+    }
 
-	/**
-	 * @return string
-	 */
-	public function getPath() {
-		return $this->path;
-	}
+    /**
+     * @return string
+     */
+    public function getPath()
+    {
+        return $this->path;
+    }
 
-	public function __toString() {
-		return $this->path;
-	}
+    public function __toString()
+    {
+        return $this->path;
+    }
 }

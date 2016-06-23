@@ -12,19 +12,20 @@ namespace josafafilho\urlparser\UrlComponents;
  * Interface SchemeInterface
  * @package josafafilho\urlparser\UrlComponents
  */
-interface SchemeInterface {
+interface SchemeInterface
+{
 
-	/**
-	 * SchemeInterface constructor.
-	 *
-	 * @param string $scheme
-	 */
-	public function __construct( $scheme );
+    /**
+     * SchemeInterface constructor.
+     *
+     * @param string $scheme
+     */
+    public function __construct($scheme);
 
-	/**
-	 * @return string
-	 */
-	public function getScheme();
+    /**
+     * @return string
+     */
+    public function getScheme();
 
-	public function __toString();
+    public function __toString();
 }

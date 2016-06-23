@@ -12,20 +12,21 @@ namespace josafafilho\urlparser\UrlComponents;
  * Interface QueryInterface
  * @package josafafilho\urlparser\UrlComponents
  */
-interface QueryInterface {
+interface QueryInterface
+{
 
-	/**
-	 * QueryInterface constructor.
-	 *
-	 * @param string $query
-	 */
-	public function __construct( $query );
+    /**
+     * QueryInterface constructor.
+     *
+     * @param string $query
+     */
+    public function __construct($query);
 
-	/**
-	 * @return string
-	 */
-	public function getQuery();
+    /**
+     * @return string
+     */
+    public function getQuery();
 
-	public function __toString();
+    public function __toString();
 
 }

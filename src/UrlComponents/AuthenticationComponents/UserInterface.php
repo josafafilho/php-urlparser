@@ -12,19 +12,20 @@ namespace josafafilho\urlparser\UrlComponents\AuthenticationComponents;
  * Interface UserInterface
  * @package josafafilho\urlparser\UrlComponents\AuthenticationComponents
  */
-interface UserInterface {
+interface UserInterface
+{
 
-	/**
-	 * UserInterface constructor.
-	 *
-	 * @param string $user
-	 */
-	public function __construct( $user );
+    /**
+     * UserInterface constructor.
+     *
+     * @param string $user
+     */
+    public function __construct($user);
 
-	/**
-	 * @return string
-	 */
-	public function getUser();
+    /**
+     * @return string
+     */
+    public function getUser();
 
-	public function __toString();
+    public function __toString();
 }

@@ -12,30 +12,33 @@ namespace josafafilho\urlparser;
  * Class UrlParser
  * @package josafafilho\urlparser
  */
-class UrlParser implements UrlParserInterface {
+class UrlParser implements UrlParserInterface
+{
 
 
-	private $url;
+    private $url;
 
-	/**
-	 * @var string
-	 */
-	private $urlString;
+    /**
+     * @var string
+     */
+    private $urlString;
 
-	/**
-	 * UrlParser constructor.
-	 *
-	 * @param string $url
-	 */
-	public function __construct( $url ) {
-		$this->urlString = $url;
-	}
+    /**
+     * UrlParser constructor.
+     *
+     * @param string $url
+     */
+    public function __construct($url)
+    {
+        $this->urlString = $url;
+    }
 
-	public function parse() {
-		if ( is_null( $this->url ) ) {
-			$this->url = UrlBuilder::buildUrl( $this->urlString );
-		}
+    public function parse()
+    {
+        if (is_null($this->url)) {
+            $this->url = UrlBuilder::buildUrl($this->urlString);
+        }
 
-		return $this->url;
-	}
+        return $this->url;
+    }
 }

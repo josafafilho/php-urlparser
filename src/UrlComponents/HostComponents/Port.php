@@ -9,30 +9,34 @@
 namespace josafafilho\urlparser\UrlComponents\HostComponents;
 
 
-class Port implements PortInterface {
+class Port implements PortInterface
+{
 
-	/**
-	 * @var int
-	 */
-	private $port;
+    /**
+     * @var int
+     */
+    private $port;
 
-	/**
-	 * Port constructor.
-	 *
-	 * @param int $port
-	 */
-	public function __construct( $port ) {
-		$this->port = $port;
-	}
+    /**
+     * Port constructor.
+     *
+     * @param int $port
+     */
+    public function __construct($port)
+    {
+        $this->port = $port;
+    }
 
-	/**
-	 * @return int
-	 */
-	public function getPort() {
-		return $this->port;
-	}
+    /**
+     * @return int
+     */
+    public function getPort()
+    {
+        return $this->port;
+    }
 
-	public function __toString() {
-		return strval( $this->port );
-	}
+    public function __toString()
+    {
+        return strval($this->port);
+    }
 }

@@ -16,15 +16,17 @@ use josafafilho\urlparser\UrlComponents\HostComponents\Port;
  * Class HostFactory
  * @package josafafilho\urlparser\UrlComponents
  */
-class HostFactory {
+class HostFactory
+{
 
-	/**
-	 * @param string $hostname
-	 * @param int $port
-	 *
-	 * @return HostInterface
-	 */
-	public static function makeHost( $hostname, $port ) {
-		return new Host( new Hostname( $hostname ), new Port( $port ) );
-	}
+    /**
+     * @param string $hostname
+     * @param int $port
+     *
+     * @return HostInterface
+     */
+    public static function makeHost($hostname, $port)
+    {
+        return new Host(new Hostname($hostname), new Port($port));
+    }
 }

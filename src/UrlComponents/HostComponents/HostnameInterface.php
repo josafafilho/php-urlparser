@@ -12,19 +12,20 @@ namespace josafafilho\urlparser\UrlComponents\HostComponents;
  * Interface HostnameInterface
  * @package josafafilho\urlparser\UrlComponents\HostComponents
  */
-interface HostnameInterface {
+interface HostnameInterface
+{
 
-	/**
-	 * HostnameInterface constructor.
-	 *
-	 * @param string $hostname
-	 */
-	public function __construct( $hostname );
+    /**
+     * HostnameInterface constructor.
+     *
+     * @param string $hostname
+     */
+    public function __construct($hostname);
 
-	/**
-	 * @return string
-	 */
-	public function getHostname();
+    /**
+     * @return string
+     */
+    public function getHostname();
 
-	public function __toString();
+    public function __toString();
 }

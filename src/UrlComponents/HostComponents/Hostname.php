@@ -12,30 +12,34 @@ namespace josafafilho\urlparser\UrlComponents\HostComponents;
  * Class Hostname
  * @package josafafilho\urlparser\UrlComponents\HostComponents
  */
-class Hostname implements HostnameInterface {
+class Hostname implements HostnameInterface
+{
 
-	/**
-	 * @var string
-	 */
-	private $hostname;
+    /**
+     * @var string
+     */
+    private $hostname;
 
-	/**
-	 * Hostname constructor.
-	 *
-	 * @param string $hostname
-	 */
-	public function __construct( $hostname ) {
-		$this->hostname = $hostname;
-	}
+    /**
+     * Hostname constructor.
+     *
+     * @param string $hostname
+     */
+    public function __construct($hostname)
+    {
+        $this->hostname = $hostname;
+    }
 
-	/**
-	 * @return string
-	 */
-	public function getHostname() {
-		return $this->hostname;
-	}
+    /**
+     * @return string
+     */
+    public function getHostname()
+    {
+        return $this->hostname;
+    }
 
-	public function __toString() {
-		return $this->hostname;
-	}
+    public function __toString()
+    {
+        return $this->hostname;
+    }
 }

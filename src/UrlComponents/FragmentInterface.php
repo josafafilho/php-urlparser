@@ -12,19 +12,20 @@ namespace josafafilho\urlparser\UrlComponents;
  * Interface FragmentInterface
  * @package josafafilho\urlparser\UrlComponents
  */
-interface FragmentInterface {
+interface FragmentInterface
+{
 
-	/**
-	 * FragmentInterface constructor.
-	 *
-	 * @param string $fragment
-	 */
-	public function __construct( $fragment );
+    /**
+     * FragmentInterface constructor.
+     *
+     * @param string $fragment
+     */
+    public function __construct($fragment);
 
-	/**
-	 * @return string
-	 */
-	public function getFragment();
+    /**
+     * @return string
+     */
+    public function getFragment();
 
-	public function __toString();
+    public function __toString();
 }

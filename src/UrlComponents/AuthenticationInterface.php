@@ -12,14 +12,15 @@ namespace josafafilho\urlparser\UrlComponents;
 use josafafilho\urlparser\UrlComponents\AuthenticationComponents\PasswordInterface;
 use josafafilho\urlparser\UrlComponents\AuthenticationComponents\UserInterface;
 
-interface AuthenticationInterface {
+interface AuthenticationInterface
+{
 
-	public function __construct( UserInterface $user, PasswordInterface $password );
+    public function __construct(UserInterface $user, PasswordInterface $password);
 
-	public function getUser();
+    public function getUser();
 
-	public function getPassword();
+    public function getPassword();
 
-	public function __toString();
+    public function __toString();
 
 }

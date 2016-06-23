@@ -16,15 +16,17 @@ use josafafilho\urlparser\UrlComponents\AuthenticationComponents\User;
  * Class AuthenticationFactory
  * @package josafafilho\urlparser\UrlComponents
  */
-class AuthenticationFactory {
+class AuthenticationFactory
+{
 
-	/**
-	 * @param string $user
-	 * @param string $pass
-	 *
-	 * @return AuthenticationInterface
-	 */
-	public static function makeAuthentication( $user, $pass ) {
-		return new Authentication( new User( $user ), new Password( $pass ) );
-	}
+    /**
+     * @param string $user
+     * @param string $pass
+     *
+     * @return AuthenticationInterface
+     */
+    public static function makeAuthentication($user, $pass)
+    {
+        return new Authentication(new User($user), new Password($pass));
+    }
 }

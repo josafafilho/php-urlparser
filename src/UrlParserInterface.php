@@ -12,17 +12,18 @@ namespace josafafilho\urlparser;
  * Interface UrlParserInterface
  * @package josafafilho\urlparser
  */
-interface UrlParserInterface {
+interface UrlParserInterface
+{
 
-	/**
-	 * UrlParserInterface constructor.
-	 *
-	 * @param string $url
-	 */
-	public function __construct( $url );
+    /**
+     * UrlParserInterface constructor.
+     *
+     * @param string $url
+     */
+    public function __construct($url);
 
-	/**
-	 * @return UrlInterface
-	 */
-	public function parse();
+    /**
+     * @return UrlInterface
+     */
+    public function parse();
 }

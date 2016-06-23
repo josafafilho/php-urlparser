@@ -12,24 +12,26 @@ namespace josafafilho\urlparser\UrlComponents;
  * Class PathNormalizer
  * @package josafafilho\urlparser\UrlComponents
  */
-class PathNormalizer implements PathNormalizerInterface {
+class PathNormalizer implements PathNormalizerInterface
+{
 
-	/**
-	 * @param $path
-	 *
-	 * @return string;
-	 */
-	public static function normalize( $path ) {
-		$pathParts  = explode( "/", $path );
-		$cleanParts = [ ];
+    /**
+     * @param $path
+     *
+     * @return string;
+     */
+    public static function normalize($path)
+    {
+        $pathParts  = explode("/", $path);
+        $cleanParts = [];
 
-		foreach ( $pathParts as $part ) {
-			if ( $part != ".." && $part != "." ) {
-				$cleanParts[] = $part;
-			}
-		}
+        foreach ($pathParts as $part) {
+            if ($part != ".." && $part != ".") {
+                $cleanParts[] = $part;
+            }
+        }
 
-		return implode( "/", $cleanParts );
-	}
+        return implode("/", $cleanParts);
+    }
 
 }
