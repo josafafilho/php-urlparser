@@ -12,19 +12,20 @@ namespace josafafilho\urlparser\UrlComponents;
  * Interface PathInterface
  * @package josafafilho\urlparser\UrlComponents
  */
-interface PathInterface {
-	/**
-	 * PathInterface constructor.
-	 *
-	 * @param string $path
-	 */
-	public function __construct( $path );
+interface PathInterface
+{
+    /**
+     * PathInterface constructor.
+     *
+     * @param string $path
+     */
+    public function __construct($path);
 
-	/**
-	 * @return string
-	 */
-	public function getPath();
+    /**
+     * @return string
+     */
+    public function getPath();
 
-	public function __toString();
+    public function __toString();
 
 }

@@ -12,30 +12,34 @@ namespace josafafilho\urlparser\UrlComponents\AuthenticationComponents;
  * Class User
  * @package josafafilho\urlparser\UrlComponents\AuthenticationComponents
  */
-class User implements UserInterface {
+class User implements UserInterface
+{
 
-	/**
-	 * @var string
-	 */
-	private $user;
+    /**
+     * @var string
+     */
+    private $user;
 
-	/**
-	 * User constructor.
-	 *
-	 * @param string $user
-	 */
-	public function __construct( $user ) {
-		$this->user = $user;
-	}
+    /**
+     * User constructor.
+     *
+     * @param string $user
+     */
+    public function __construct($user)
+    {
+        $this->user = $user;
+    }
 
-	/**
-	 * @return string
-	 */
-	public function getUser() {
-		return $this->user;
-	}
+    /**
+     * @return string
+     */
+    public function getUser()
+    {
+        return $this->user;
+    }
 
-	public function __toString() {
-		return $this->user;
-	}
+    public function __toString()
+    {
+        return $this->user;
+    }
 }

@@ -12,30 +12,34 @@ namespace josafafilho\urlparser\UrlComponents;
  * Class Scheme
  * @package josafafilho\urlparser\UrlComponents
  */
-class Scheme implements SchemeInterface {
+class Scheme implements SchemeInterface
+{
 
-	/**
-	 * @var string
-	 */
-	private $scheme;
+    /**
+     * @var string
+     */
+    private $scheme;
 
-	/**
-	 * Scheme constructor.
-	 *
-	 * @param string $scheme
-	 */
-	public function __construct( $scheme ) {
-		$this->scheme = $scheme;
-	}
+    /**
+     * Scheme constructor.
+     *
+     * @param string $scheme
+     */
+    public function __construct($scheme)
+    {
+        $this->scheme = $scheme;
+    }
 
-	/**
-	 * @return string
-	 */
-	public function getScheme() {
-		return $this->scheme;
-	}
+    /**
+     * @return string
+     */
+    public function getScheme()
+    {
+        return $this->scheme;
+    }
 
-	public function __toString() {
-		return $this->scheme ? "{$this->scheme}://" : '';
-	}
+    public function __toString()
+    {
+        return $this->scheme ? "{$this->scheme}://" : '';
+    }
 }
